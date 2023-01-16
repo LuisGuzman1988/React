@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Cargat React -->
+   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <title>ReactAPP</title>
+</head>
+<body>
+  
+  <div id="root"></div>
+
+  <script type="text/babel">
+
+    const divRoot = document.querySelector('#root')
+
+    const nombre = 'Luis Guzmán'
+    const h1Tag = <h1>Hola, soy { nombre }</h1>
+
+    ReactDOM.render ( h1Tag, divRoot )
+
+    /* 
+    
+   1 primero se establece el lugar de visualización un div con id root 
+   2 segundo se llama la ruta en una constante
+   3 tercero se llama el objeto ReactDom.render y se les pasa lo que quieres visualizar
+    
+    
+    */
+
+
+
+  </script>
+</body>
+</html>
